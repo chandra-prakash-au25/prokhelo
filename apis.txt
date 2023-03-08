@@ -1,0 +1,57 @@
+#########################################################################################
+TO RUN THIS PROJECT YOU NEED INSTALL  ALL DEPENDENCY
+ONLY FOR TESTING PURPOSE I HAVE NOT USED ENV ENCRYPTION
+AND PROVIDE YOU MY ALL LINK LIKE CLOUDINARY AND MOGODB ATLAS
+#########################################################################################
+#1.http://localhost:3001/api/profile/create   (post)
+
+formdata
+username
+password
+email
+desc
+photo
+
+#2.http://localhost:3001/api/login  (post)
+
+post JSON DATA
+{
+    "username":"ammu",
+    "password":"amrit"
+}
+this user has been deleted
+
+#3.http://localhost:3001/api/profiles?userid=6408eaea4623e15eb1fe18f0   (get)
+  
+
+in params  pass userid
+in header pass token example "bearere token"
+you will get all DATA
+
+
+#4 http://localhost:3001/api/profile?userid=6408eaea4623e15eb1fe18f0(get)
+for getting single user with id
+
+
+in params  pass userid
+in header pass token example "bearere token"
+you will get  DATA
+
+#5.http://localhost:3001/api/profile?userid=6408eaea4623e15eb1fe18f0  (put)
+  to update user
+  in params  pass userid
+  in header pass token example "bearere token"
+  in body field in json format that you want change
+  {
+    "username":"ammu"
+}
+
+#6.http://localhost:3001/api/profile?userid=6408eaea4623e15eb1fe18f0  (delete)
+to delete user
+
+in params  pass userid
+in header pass token example "bearere token"
+
+
+
+#######################################################################################
